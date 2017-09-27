@@ -14,12 +14,10 @@ class River
 
 	def add_fish(fish)
 		 @fish_stock << fish
-		 return @fish_stock.count()
 	end
 
-	def remove_fish(fish)
-		 @fish_stock.delete(fish)
-		 return @fish_stock.count()
+	def remove_fish()
+		 @fish_stock.pop()
 	end
 
 end

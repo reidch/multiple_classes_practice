@@ -36,7 +36,7 @@ class TestRiver < MiniTest::Test
 		@river.add_fish(@fish2)
 		@river.add_fish(@fish3)
 		@river.add_fish(@fish4)
-		@river.remove_fish(@fish4)
+		@river.remove_fish()
 		assert_equal(3, @river.fish_stock())
 	end
 
